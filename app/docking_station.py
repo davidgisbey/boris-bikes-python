@@ -10,9 +10,10 @@ class DockingStation:
     self.bikes.remove(bike)
     return bike
 
-  def receive_bike(self, bike):
+  def receive_bike(self, bike, working = True):
     if len(self.bikes) >= self.capacity:
       return "Docking station is full"
 
+    bike.working = working
     self.bikes.append(bike)
     return True

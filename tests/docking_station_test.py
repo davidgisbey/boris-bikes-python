@@ -42,3 +42,12 @@ def test_cannot_receive_bike_if_full():
 
   assert docking_station.receive_bike(bike) == "Docking station is full"
   assert docking_station.bikes == []
+
+def test_can_report_bike_broken():
+  bike = Bike(working=True)
+  docking_station = DockingStation(bikes=[])
+
+  docking_station.receive_bike(bike, False)
+
+  assert docking_station.bikes == [bike]
+  assert docking_station.bikes[0].working == False
