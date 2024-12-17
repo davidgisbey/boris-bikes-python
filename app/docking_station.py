@@ -8,3 +8,7 @@ class DockingStation:
 
     self.bikes.remove(bike)
     return bike
+
+  def receive_bike(self, bike):
+    self.bikes.append(bike)
+    return True
