@@ -7,6 +7,9 @@ class DockingStation:
     if bike not in self.bikes:
       return "Bike not in docking station"
 
+    if bike.working == False:
+      return "Bike is not working"
+
     self.bikes.remove(bike)
     return bike
 

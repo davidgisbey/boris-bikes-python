@@ -29,6 +29,12 @@ def test_bike_not_in_docking_station():
 
   assert docking_station.release_bike(bike1) == "Bike not in docking station"
 
+def test_cannot_release_broken_bike():
+  bike = Bike(False)
+  docking_station = DockingStation(bikes=[bike])
+
+  assert(docking_station.release_bike(bike)) == "Bike is not working"
+
 def test_can_receive_bike():
   bike = Bike()
   docking_station = DockingStation()
