@@ -1,3 +1,3 @@
 class Garage:
-  def __init__(self, bikes = []):
-    self.bikes = bikes
+    def __init__(self, bikes=[]):
+        self.bikes = bikes
