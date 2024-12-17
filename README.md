@@ -1,5 +1,6 @@
 ## User stories
 
+```
 As a person,
 So that I can use a bike,
 I'd like a docking station to release a bike.
@@ -47,3 +48,12 @@ I'd like docking stations to accept returning bikes (broken or not).
 As a maintainer of the system,
 So that I can manage broken bikes and not disappoint users,
 I'd like vans to take broken bikes from docking stations and deliver them to garages to be fixed.
+
+As a maintainer of the system,
+So that I can get bikes working for users
+I'd like a garage to be able to repair bikes for users
+
+As a maintainer of the system,
+So that I can get working bikes back to docking stations
+I'd like a van to be able to pick up broken bikes and drop them off at a docking station
+```
